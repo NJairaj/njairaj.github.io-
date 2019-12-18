@@ -1,0 +1,38 @@
+body{
+  padding: 20px;
+}
+*{box-sizing: border-box;}
+.card1{
+  width: 100%;
+  height: 100%;
+  border: solid white 2px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px white;
+  box-sizing: border-box;
+}
+.row{
+  margin-top: 30px;
+}
+.rightCol{
+  background-color: pink;
+}
+.subCol{
+  float: left;
+  margin-top: 20px;
+}
+.card2{
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+.card2 img{
+  width: 100%;
+}
+.Col_title, .Col_text{
+  font-size: 15px;
+  padding: 10px;
+}
+.card2:hover{
+  box-shadow: 5px 5px 5px gray;
+  box-sizing: border-box;
+}

@@ -1,0 +1,165 @@
+body{
+  padding: 60px;
+}
+.mainContainer{
+  height: 500px;
+  width: 100%;
+  padding: 60px;
+  overflow: hidden;
+}
+.jumbotron{
+  padding-top: 40px;
+  height: 500px;
+  width: 700px;
+  text-align: center;
+}
+.display-3{
+  font-family: 'OCR A Extended';
+  font-style: oblique;
+  font-stretch: semi-expanded;
+  font-size: 70px;
+  animation: slide 8s;
+}
+@keyframes slide {
+  from {transform: translateY(70px);}
+  to {transform: translateY(0);}
+}
+.lead{
+  font-size: 24px;
+}
+.img1{
+  height: 400px;
+  width: 500px;
+  float: right;
+  margin-right: 100px;
+  border-radius: 100px;
+  box-shadow: 5px 5px 3px lightblue;
+  animation: zoom 8s;
+}
+@keyframes zoom {
+  0%{transform: scale(0); top:100px left:100px;}
+  100%{transform: scale(1); top:600px left:600px;}
+}
+.carouselSize{
+  width: 100%;
+  height: 700px;
+}
+.carouselSize img{
+  width: 100%;
+  height: 100%;
+}
+.captionCSS{
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+.p1, .p2, .p3, .p4{
+  color: white;
+  font-size: 18px;
+}
+.button1{
+  color: white;
+}
+.header{
+  border: solid purple;
+  background-color: gray;
+  height: 80px;
+  width: 100%;
+  font-size: 50px;
+  padding-left: 10px;
+  color: white;
+}
+.card1{
+  width: 100%;
+  height: 500px;
+  border-radius: 2px;
+  filter: drop-shadow(5px 5px 5px gray);
+}
+.card1 img{
+  width: 100%;
+  padding: 10px;
+}
+.Col_title{
+  font-size: 15px;
+  padding: 20px;
+}
+.card1:hover{
+  filter: drop-shadow(8px 8px 8px red) invert(75%);
+}
+.container-m{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.row2{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.card2{
+  width: auto;
+  height: 100%;
+  border-radius: 2px;
+  filter: drop-shadow(5px 5px 5px gray);
+  padding: 10px;
+}
+.card2 h2, h4{
+  padding: 20px;
+}
+.card2 img{
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+}
+.contactContainer{
+  width: 100%;
+  height: 200px;
+  padding: 40px;
+  display: flex;
+  overflow: hidden;
+}
+.c1, .c2, .c3, .c4{
+  font-size: 17px;
+  color: white;
+  margin-left: 7%;
+  justify-content: space-between;
+}
+.contactContainer2{
+  width: 100%;
+  height: 500px;
+  background-color: #343a40;
+}
+.h1{
+  display: block;
+   height: 0.5px;
+   border: 0;
+   border-top: 1px solid white;
+   margin: 1px 0px;
+   padding: 0px;
+}
+.c5{
+  font-size: 17px;
+  color: white;
+  text-align: left;
+  margin-left: 50px;
+}
+.socialMedia{
+  display:inline-flex;
+  flex-wrap: wrap;
+}
+.socialMedia img{
+  width: 35px;
+  height: 35px;
+  margin-left: 35px;
+  float: right;
+}
+.socialMedia img:hover{
+  filter: drop-shadow(6px 6px 5px red) invert(75%);
+}

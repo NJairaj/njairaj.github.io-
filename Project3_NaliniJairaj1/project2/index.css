@@ -1,0 +1,363 @@
+body{
+  background-color: #FEFEFE;
+}
+.container{
+  background-color: #ABD4EC;
+  padding: 10px;
+  width: 98%;
+  height: 200px;
+  overflow: hidden;
+}
+.img1{
+  height: 200px;
+  width: 400px;
+  float: left;
+  border-radius: 10px;
+  animation: zoom 8s;
+}
+@keyframes zoom {
+  0%{transform: scale(0); top:100px left:100px;}
+  100%{transform: scale(1); top:600px left:600px;}
+}
+.text1{
+  font-family: "Californian FB";
+  font-style: italic;
+  font-size: 70px;
+  text-align: center;
+  color: darkblue;
+  width: 60%;
+  padding: 20px;
+  animation: slide 8s;
+}
+.text2{
+  font-family: "Century Gothic";
+  font-size: 35px;
+  text-align: right;
+  color: white;
+  width: 60%;
+  padding: 20px;
+  float: left;
+  animation: slide 8s;
+}
+@keyframes slide {
+  from {transform: translateY(70px);}
+  to {transform: translateY(0);}
+}
+.slideshow1{
+
+  overflow: hidden;
+  width: 1650px;
+  height: 50px;
+}
+.slide-wrapper{
+  width: 4950px;
+  height: 50px;
+  animation: slideshow 12s infinite;
+}
+@keyframes slideshow {
+  0%{margin-left: 0px;}
+  10%{margin-left: 0px;}
+  33.33%{margin-left: -1650px;}
+  43.33%{margin-left: -1650px;}
+  66.66%{margin-left: -3300px;}
+  76.66%{margin-left: -3300px;}
+  96.66%{margin-left: 0px;}
+  100%{margin-left: 0px;}
+}
+.slide1, .slide2, .slide3{
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Century Gothic";
+  color: gray;
+}
+.slide1{
+  background-color: #F7D0E8;
+}
+.slide2{
+  background-color: #D0F6F7;
+}
+.slide3{
+  background-color: #E8D0F7;
+}
+.container2{
+
+  padding: 5%;
+  width: 89%;
+  height: 20%;
+  position: relative;
+}
+.img2{
+  height: 100%;
+  width: 100%;
+}
+.text3{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10%;
+  font-size: 20px;
+}
+.container3{
+
+  padding: 5%;
+  width: 89%;
+  height: 850px;
+  position: relative;
+}
+.img3{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient( to top left, rgba(219,118,24,0.7), rgba(222,140,170,0.7)),url("images/img5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.text4{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 40%;
+  color: white;
+  text-align: center;
+  padding: 10%;
+  font-size: 20px;
+}
+.heading1, .heading2{
+  font-family: "Californian FB";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: left;
+  color: darkblue;
+  font-size: 25px;
+}
+.mainContainer{
+  width: 100%;
+  margin-top: 50px;
+  height: 750px;
+
+}
+.item{
+
+  width: 400px;
+  height: 700px;
+  float:left;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+}
+.item img{
+  width: 40%;
+  margin-left: 30%;
+}
+.newText{
+  color: darkblue;
+  text-align: center;
+  font-weight: 600;
+  font-style: "Adobe Garamond Pro Bold";
+}
+.itemTitle,.itemSubtitle{
+  text-align: center;
+  color: black;
+}
+.itemPrice{
+  font-size: 1.3em;
+  text-align: center;
+  color: darkblue;
+}
+.itemPromo{
+  text-align: center;
+  color: red;
+  font-size: 0.9em;
+}
+.itemLink1, .itemLink2, .itemLink3, .itemLink4, .itemLink5, .itemLink6{
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-style: "Bahnschrift Light";
+  border-radius: 2px;
+  padding: 10px;
+  margin-left: 150px;
+}
+.itemLink1:hover{
+  background-color: #9cebf7;
+  color: white;
+}
+.itemLink2:hover{
+  background-color: #9cf7c2;
+  color: white;
+}
+.itemLink3:hover{
+  background-color: #f79c9c;
+  color: white;
+}
+.itemLink4:hover{
+  background-color: #9cebf7;
+  color: white;
+}
+.itemLink5:hover{
+  background-color: #f79c9c;
+  color: white;
+}
+.itemLink6:hover{
+  background-color: #9cf7c2;
+  color: white;
+}
+.modalWindow{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalWindow:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText{
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  top: 100px;
+  left: 560px;
+  padding: 30px;
+  border-style: dashed;
+}
+.b1, .b4{
+  background-color: #9cebf7;
+  padding: 10px;
+  color: white;
+}
+.b2, .b6{
+  background-color: #9cf7c2;
+  padding: 10px;
+  color: white;
+}
+.b3, .b5{
+  background-color: #f79c9c;
+  padding: 10px;
+  color: white;
+}
+.msgText img{
+  width: 100px;
+  height: 250px;
+  float: left;
+}
+.p1{
+  font-size: 20px;
+  text-align: center;
+}
+.p2, .p3, .p4, .p5{
+  font-size: 17px;
+  text-align: center;
+}
+.p5{
+  color: red;
+}
+.modal-close{
+  padding: 12px;
+  color: gray;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 1px;
+}
+.modal-close:hover{
+  color: red;
+  text-decoration: underline;
+}
+.modal-close1{
+  padding: 12px;
+  color: gray;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 460px;
+}
+.modal-close1:hover{
+  color: red;
+  text-decoration: underline;
+}
+.itemInfo{
+  text-align: center;
+  color: gray;
+  font-size: 0.9em;
+}
+.i4{
+  width: 350px;
+  height: 250px;
+  margin-left: 30%;
+}
+.i5{
+  width: 150px;
+  height: 250px;
+  float: left;
+}
+.mainContainer{
+  width: 100%;
+  margin-top: 50px;
+  height: 750px;
+  border: solid red;
+}
+.item{
+  border: solid green;
+  width: 400px;
+  height: 700px;
+  float:left;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+}
+.item img{
+  width: 40%;
+  margin-left: 30%;
+}
+.newText{
+  color: darkblue;
+  text-align: center;
+  font-weight: 600;
+  font-style: "Adobe Garamond Pro Bold";
+}
+.itemTitle,.itemSubtitle{
+  text-align: center;
+  color: black;
+}
+.itemPrice{
+  font-size: 1.3em;
+  text-align: center;
+  color: darkblue;
+}
+.itemPromo{
+  text-align: center;
+  color: red;
+  font-size: 0.9em;
+}
+.itemLink1, .itemLink2{
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-style: "Bahnschrift Light";
+  border-radius: 2px;
+  padding: 10px;
+  margin-left: 150px;
+}
+.itemLink1:hover{
+  background-color: #9cebf7;
+  color: white;
+}
+.itemLink2:hover{
+  background-color: #9cf7c2;
+  color: white;
+}
