@@ -1,0 +1,34 @@
+body{
+  padding: 10px;
+}
+.collapseNYC{
+  background-color: lightblue;
+  padding: 20px;
+}
+.collapseNYC img{
+  width: 28%;
+  height: auto;
+  margin: 10px;
+}
+.collapseBrooklyn, .collapseQueens, .collapseManhattan img{
+  padding-top: 20px;
+  width:50%;
+}
+.carouselSize{
+  width: 700px;
+  height: 600px;
+}
+.carouselSize img{
+  width: 100%;
+  height: 100%;
+}
+.captionCSS{
+  width: auto;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}

@@ -1,0 +1,38 @@
+body{
+  background-color: lightblue;
+  padding: 20px;
+}
+.h1{
+  font-size: 6em;
+  color: purple;
+  font-family: "Britannic Bold";
+  text-align: center;
+  text-shadow: -7px -7px 5px yellow;
+}
+.author{
+  color: darkblue;
+  font-size: 35px;
+  font-family: "Edwardian Script ITC";
+  text-align: right;
+}
+p.intro::first-letter{
+    font-size: 3em;
+    color: green;
+    font-weight: bold;
+}
+.img1, .img2, .img3{
+  border: inset 10px pink;
+  margin: 5px;
+}
+.fig1{
+  font-size: 15px;
+  text-align: left;
+  color: black;
+  font-style: oblique;
+}
+.footer{
+  color: red;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+}

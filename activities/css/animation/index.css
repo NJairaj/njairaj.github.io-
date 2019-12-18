@@ -1,0 +1,102 @@
+.frame{
+  width: 800px;
+  height: 800px;
+  background-color: lightgray;
+  position: relative;
+}
+.rotationImage{
+  width: 180px;
+  height: 200px;
+  left: 300px;
+  top: 300px;
+  position: absolute;
+  animation: spin 10s;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  30%{transform: rotate(360deg);}
+  60%{transform: rotate(-180deg);}
+  100%{transform: rotate(0deg);}
+}
+/*-- ZOOM ANIMATION --*/
+.zoomImage{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  animation: zoom 10s;
+}
+@keyframes zoom {
+  0%{transform: scale(0); top:100px left:100px;}
+  50%{transform: scale(1); top:600px; left:600px;}
+  100%{transform: scale(0);}
+}
+/*-- IN CLASS ACTIVITY --*/
+.zoomImage2{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  animation: zoom2 15s;
+}
+@keyframes zoom2 {
+  0%{transform: scale(0); top:100px; left:100px;}
+  6%{transform: scale(1); bottom:600px; right:600px;}
+  12%{transform: scale(0);}
+  18%{transform: scale(0.3); top:500px; left:500px;}
+  24%{transform: scale(0);}
+  30%{transform: scale(0.9); bottom:800px; right:800px;}
+  36%{transform: scale(0);}
+  42%{transform: scale(0.2); top:100px; left:100px;}
+  48%{transform: scale(0);}
+  54%{transform: scale(0.7); bottom:700px; right:700px;}
+  60%{transform: scale(0);}
+  66%{transform: scale(0.4); top:500px; left:500px;}
+  72%{transform: scale(0);}
+  78%{transform: scale(0.8); bottom:800px; right:800px;}
+  100%{transform: scale(0);}
+}
+.frameContainer{
+width: 1500px;
+height: 700px;
+background-color: lightgray;
+position: relative;
+}
+.animationSquare1{
+height: 100px;
+width: 100px;
+background-color: darkblue;
+position: absolute;
+animation: animation_square1 15s 20;
+}
+@keyframes animation_square1 {
+0%{background-color: darkblue; border-radius: 0%; top: 0px; left: 0px;}
+25%{background-color: darkred; border-radius: 50%; top: 500px; left: 1400px;}
+37%{background-color: darkred; border-radius: 0%;}
+50%{background-color: green; border-radius: 0%; top: 0px; left: 1400px;}
+62%{background-color: green; border-radius: 0%;}
+75%{background-color: yellow; border-radius: 50%; top: 500px; left: 0px;}
+100%{background-color: darkblue; border-radius: 0%; top: 0px; left: 0px;}
+}
+.animationSquare2{
+height: 100px;
+width: 100px;
+background-color: darkblue;
+position:absolute;
+animation: animation_square2 15s 20;
+}
+@keyframes animation_square2 {
+0%{background-color: darkblue; border-radius: 0%; bottom: 0px; right: 0px;}
+25%{background-color: darkred; border-radius: 50%; bottom: 500px; right: 1400px;}
+37%{background-color: darkred; border-radius: 0%;}
+50%{background-color: green; border-radius: 0%; bottom: 0px; right: 1400px;}
+62%{background-color: green; border-radius: 0%;}
+75%{background-color: yellow; border-radius: 50%; bottom: 500px; right: 0px;}
+100%{background-color: darkblue; border-radius: 0%; bottom: 0px; right: 0px;}
+}

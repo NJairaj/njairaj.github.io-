@@ -1,0 +1,29 @@
+.container{
+  width: 100%;
+  margin-top: 50px;
+  height: 700px;
+  border: solid red;
+}
+.invert{
+  height: 600px;
+  width: 450px;
+  margin-left: 20px;
+  padding: 20px;
+}
+.blur{
+  height: 600px;
+  width: 450px;
+  margin-left: 20px;
+  padding: 20px;
+}
+.heroImage{
+  background-image: linear-gradient( to top left, rgba(158,133,235,0.7), rgba(119,242,249,0.7)),url("images/station.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 560px;
+  width: 440px;
+  float: right;
+  padding: 20px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
